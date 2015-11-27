@@ -1,0 +1,11 @@
+<idea-plugin url="http://heffebaycay.fr/">
+    <name>Sentry Stack Formatter</name>
+    <description>Sentry Stack Formatter</description>
+    <version>1.0</version>
+    <vendor email="fchebel@gmail.com">Fabien Chebel</vendor>
+    <resource-bundle>fr.heffebaycay.intellij.formatter.SentryBundle</resource-bundle>
+    <extensions defaultExtensionNs="com.intellij">
+        <errorHandler implementation="com.intellij.diagnostic.ITNReporter"/>
+        <unscrambleSupport implementation="fr.heffebaycay.intellij.formatter.SentryUnscrambleSupport"/>
+    </extensions>
+</idea-plugin>
