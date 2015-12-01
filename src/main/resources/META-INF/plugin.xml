@@ -17,7 +17,7 @@
   <change-notes>Initial release of the plugin.</change-notes>
 
   <!-- Plugin version -->
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0</version>
 
   <!-- The vendor of the plugin.
        The optional "url" attribute specifies the URL of the vendor homepage.
