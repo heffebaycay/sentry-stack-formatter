@@ -14,8 +14,7 @@ intellij {
     version 'IU-15.0.1'
     pluginName 'SentryStackFormatter'
     type 'IU'
-
-
+    updateSinceUntilBuild false
 }
 repositories {
     mavenCentral()
