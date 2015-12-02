@@ -18,10 +18,12 @@ public class FakeException extends Exception {
     @Override
     public String toString() {
         StringBuffer buffer = new StringBuffer();
-        buffer.append(module);
-        buffer.append(".");
-        buffer.append(type);
-        buffer.append(": ");
+        if (module != null && type != null) {
+            buffer.append(module);
+            buffer.append(".");
+            buffer.append(type);
+            buffer.append(": ");
+        }
         buffer.append(getMessage());
 
         return buffer.toString();

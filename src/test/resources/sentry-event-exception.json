@@ -1,0 +1,63 @@
+{
+  "id": "abcdef123456",
+  "project": 1337,
+  "release": null,
+  "platform": "java",
+  "culprit": "fr.heffebaycay.great.package.MyExceptionHandler.handle(MyExceptionHandler.java:53)",
+  "message": "Oh god, what did you do!",
+  "datetime": "2015-12-02T20:03:26.000000Z",
+  "time_spent": null,
+  "tags": [
+  ],
+  "errors": [],
+  "extra": {
+  },
+  "fingerprint": "{{ default }}",
+  "sentry.interfaces.Exception": {
+    "exc_omitted": null,
+    "values": [
+      {
+        "stacktrace": {
+          "frames": [
+            {
+              "function": "begin",
+              "lineno": 21,
+              "module": "fr.heffebaycay.logic.EntryPoint",
+              "in_app": true
+            },
+            {
+              "function": "init",
+              "lineno": 13,
+              "module": "fr.heffebaycay.foo.BarBaz",
+              "in_app": true
+            },
+            {
+              "function": "doBarBazStuff",
+              "lineno": 85,
+              "module": "fr.heffebaycay.foo.BarBaz",
+              "in_app": true
+            },
+            {
+              "function": "doAnimalStuff",
+              "lineno": 27,
+              "module": "fr.heffebaycay.domain.Animal",
+              "in_app": true
+            },
+            {
+              "function": "doBadStuff",
+              "lineno": 85,
+              "module": "fr.heffebaycay.logic.LogicClass",
+              "in_app": true
+            }
+          ],
+          "has_system_frames": true,
+          "frames_omitted": null
+        },
+        "type": "ClassCastException",
+        "module": "java.lang",
+        "value": "java.lang.String cannot be cast to fr.heffebaycay.domain.Animal"
+      }
+    ]
+  },
+  "version": "4"
+}

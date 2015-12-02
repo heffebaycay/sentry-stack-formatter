@@ -1,0 +1,5 @@
+Something bad happened in your application
+	at fr.heffebaycay.nice.package.here.MyCulprit.method(:25)
+	at fr.heffebaycay.nice.package.CulpritCaller.callCulprit(:150)
+	at fr.heffebaycay.bogus.AwesomeClass.doStuff(:19)
+	at fr.heffebaycay.logic.RequestProcessor.process(:190)

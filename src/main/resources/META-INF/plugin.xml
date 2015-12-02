@@ -1,49 +1,58 @@
 <idea-plugin url="http://heffebaycay.fr/">
 
-  <!-- Plugin name -->
-  <name>Sentry Stack Formatter</name>
+    <!-- Plugin name -->
+    <name>Sentry Stack Formatter</name>
 
-  <!-- Unique identifier of the plugin.
-       Cannot be changed between the plugin versions.
-       If not specified, assumed to be equal to <name>. -->
-  <id>35e38c06-9762-11e5-8dd3-54a050ace290</id>
+    <!-- Unique identifier of the plugin.
+         Cannot be changed between the plugin versions.
+         If not specified, assumed to be equal to <name>. -->
+    <id>35e38c06-9762-11e5-8dd3-54a050ace290</id>
 
-  <!-- Description of the plugin. -->
-  <description>Sentry Stack Formatter</description>
+    <!-- Description of the plugin. -->
+    <description>Sentry Stack Formatter</description>
 
-  <!-- Description of changes in the latest version of the plugin.
-       Displayed in the "Plugins" settings dialog and in the
-       plugin repository Web interface. -->
-  <change-notes>Initial release of the plugin.</change-notes>
+    <!-- Description of changes in the latest version of the plugin.
+         Displayed in the "Plugins" settings dialog and in the
+         plugin repository Web interface. -->
+    <change-notes><![CDATA[
+        <html>
+            <b>Changes in version 1.1:</b>
+            <ul>
+                <li>Added support for IntelliJ 14</li>
+                <li>Added support for Sentry 'Stacktrace' event</li>
+            </ul>
+        </html>
+    ]]>
+    </change-notes>
 
-  <!-- Plugin version -->
-  <version>1.1-SNAPSHOT</version>
+    <!-- Plugin version -->
+    <version>1.1-SNAPSHOT</version>
 
-  <!-- The vendor of the plugin.
-       The optional "url" attribute specifies the URL of the vendor homepage.
-       The optional "email" attribute specifies the e-mail address of the vendor.
-       The optional "logo" attribute specifies the path within the plugin JAR
-       to a 16x16 icon to be displayed next to the plugin name in the welcome screen.   -->
-  <vendor url="http://heffebaycay.fr">Fabien Chebel</vendor>
+    <!-- The vendor of the plugin.
+         The optional "url" attribute specifies the URL of the vendor homepage.
+         The optional "email" attribute specifies the e-mail address of the vendor.
+         The optional "logo" attribute specifies the path within the plugin JAR
+         to a 16x16 icon to be displayed next to the plugin name in the welcome screen.   -->
+    <vendor url="http://heffebaycay.fr">Fabien Chebel</vendor>
 
-  <!-- Minimum and maximum build of IDEA compatible with the plugin -->
-  <idea-version since-build="139.0" />
+    <!-- Minimum and maximum build of IDEA compatible with the plugin -->
+    <idea-version since-build="139.0"/>
 
-  <!-- Resource bundle from which the text of plugin descriptions,
-       action names and etc. will be loaded -->
-  <resource-bundle>fr.heffebaycay.intellij.formatter.SentryBundle</resource-bundle>
+    <!-- Resource bundle from which the text of plugin descriptions,
+         action names and etc. will be loaded -->
+    <resource-bundle>fr.heffebaycay.intellij.formatter.SentryBundle</resource-bundle>
 
-  <!-- Extensions which the plugin adds to extension points
-       defined by the IDEA core or by other plugins.
-       The "defaultExtensionNs " attribute must be set to the
-       ID of the plugin defining the extension point, or to 
-       "com.intellij" if the extension point is defined by the
-       IDEA core. The name of the tag within the <extensions>
-       tag matches the name of the extension point, and the
-       "implementation" class specifies the name of the class
-       added to the extension point. -->
-  <extensions defaultExtensionNs="com.intellij">
-  	<errorHandler implementation="com.intellij.diagnostic.ITNReporter"/>
-    <unscrambleSupport implementation="fr.heffebaycay.intellij.formatter.SentryUnscrambleSupport"/>
-  </extensions>
+    <!-- Extensions which the plugin adds to extension points
+         defined by the IDEA core or by other plugins.
+         The "defaultExtensionNs " attribute must be set to the
+         ID of the plugin defining the extension point, or to
+         "com.intellij" if the extension point is defined by the
+         IDEA core. The name of the tag within the <extensions>
+         tag matches the name of the extension point, and the
+         "implementation" class specifies the name of the class
+         added to the extension point. -->
+    <extensions defaultExtensionNs="com.intellij">
+        <errorHandler implementation="com.intellij.diagnostic.ITNReporter"/>
+        <unscrambleSupport implementation="fr.heffebaycay.intellij.formatter.SentryUnscrambleSupport"/>
+    </extensions>
 </idea-plugin>

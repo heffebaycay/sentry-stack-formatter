@@ -1,0 +1,59 @@
+{
+  "id": "abad1dea",
+  "project": 1337,
+  "release": null,
+  "platform": "java",
+  "culprit": "fr.heffebaycay.nice.package.here.MyCulprit.method(MyCulprit.java:25)",
+  "message": "Something bad happened in your application",
+  "datetime": "2015-12-02T20:00:02.000000Z",
+  "time_spent": null,
+  "tags": [
+    [
+      "tagName",
+      "value"
+    ],
+    [
+      "secondTag",
+      "secondValue"
+    ]
+  ],
+  "errors": [],
+  "extra": {},
+  "fingerprint": "{{ default }}",
+  "sentry.interfaces.Message": {
+    "message": "Something bad happened in your application",
+    "params": [
+    ]
+  },
+  "sentry.interfaces.Stacktrace": {
+    "frames": [
+      {
+        "function": "process",
+        "lineno": 190,
+        "module": "fr.heffebaycay.logic.RequestProcessor",
+        "in_app": false
+      },
+      {
+        "function": "doStuff",
+        "lineno": 19,
+        "module": "fr.heffebaycay.bogus.AwesomeClass",
+        "in_app": false
+      },
+      {
+        "function": "callCulprit",
+        "lineno": 150,
+        "module": "fr.heffebaycay.nice.package.CulpritCaller",
+        "in_app": false
+      },
+      {
+        "function": "method",
+        "lineno": 25,
+        "module": "fr.heffebaycay.nice.package.here.MyCulprit",
+        "in_app": false
+      }
+    ],
+    "has_system_frames": false,
+    "frames_omitted": null
+  },
+  "version": "4"
+}

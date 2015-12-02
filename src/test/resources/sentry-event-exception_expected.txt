@@ -1,0 +1,6 @@
+java.lang.ClassCastException: java.lang.String cannot be cast to fr.heffebaycay.domain.Animal
+	at fr.heffebaycay.logic.LogicClass.doBadStuff(:85)
+	at fr.heffebaycay.domain.Animal.doAnimalStuff(:27)
+	at fr.heffebaycay.foo.BarBaz.doBarBazStuff(:85)
+	at fr.heffebaycay.foo.BarBaz.init(:13)
+	at fr.heffebaycay.logic.EntryPoint.begin(:21)
