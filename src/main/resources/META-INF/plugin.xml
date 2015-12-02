@@ -9,7 +9,12 @@
     <id>35e38c06-9762-11e5-8dd3-54a050ace290</id>
 
     <!-- Description of the plugin. -->
-    <description>Sentry Stack Formatter</description>
+    <description><![CDATA[
+        <html>
+            Import Java stacktraces logged by Sentry into IntelliJ<br />
+        </html>
+    ]]>
+    </description>
 
     <!-- Description of changes in the latest version of the plugin.
          Displayed in the "Plugins" settings dialog and in the
