@@ -41,7 +41,7 @@
     <vendor url="http://heffebaycay.fr">Fabien Chebel</vendor>
 
     <!-- Minimum and maximum build of IDEA compatible with the plugin -->
-    <idea-version since-build="139.0"/>
+    <idea-version since-build="139.0" until-build="143.99999"/>
 
     <!-- Resource bundle from which the text of plugin descriptions,
          action names and etc. will be loaded -->
